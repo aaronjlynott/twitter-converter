@@ -1,0 +1,14 @@
+#implement a program that prompts the user for a str of text and then outputs that same text but
+def main():
+# with all vowels (A, E, I, O, and U) omitted, whether inputted in uppercase or lowercase
+    word = str(input('Input: '))
+    result = shorten(word)
+    print('Output:', result)
+
+#check input for vowels regardless of capitalization (casefold)
+#if has vowels - remove them, replace?
+def shorten(word):
+    word = word.replace('a' , '').replace('e' , '').replace('i' , '').replace('o' , '').replace('u' , '').replace('A' , '').replace('E' , '').replace('I' , '').replace('O' , '').replace('U' , '')
+    return word
+
+main()
